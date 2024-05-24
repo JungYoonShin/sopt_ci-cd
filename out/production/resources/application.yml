@@ -1,0 +1,32 @@
+spring:
+  #  config:
+  #    activate:
+  #      on-profile: local
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/thridseminar
+    username: test
+    password: test1
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+jwt:
+  secret: nowsoptnowsoptnownownononwonwownwownownwowno
+
+aws-property:
+  s3-bucket-name: now-sopt-bucketd
+  access-key: AKIAYS2NWVJB33LONKEK
+  secret-key: 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
+  aws-region: ap-northeast-2
+
+servlet:
+  multipart:
+    enabled: true
+    max-file-size: 5MB
+    max-request-size: 5MB
