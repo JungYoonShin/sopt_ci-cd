@@ -41,7 +41,7 @@ echo "----------------------------------------------------------------------"
 
 echo "> nginx 포트 스위칭"
 echo "set \$service_url http://127.0.0.1:${GREEN_PORT};" | sudo tee /etc/nginx/conf.d/service-url.inc
-#sudo nginx -s reload
+sudo nginx -s reload
 
 echo "> $GREEN_PROFILE 10초 후 Health check 시작"
 echo "> curl -s http://localhost:$GREEN_PORT/actuator/health "
